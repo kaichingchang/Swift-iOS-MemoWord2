@@ -1,5 +1,5 @@
 //
-//  檔名： ViewController.swift
+//  檔名： ResultController.swift
 //  專案： MemorizeWord2
 //
 //  《Swift 入門指南》 V3.00 的範例程式
@@ -12,41 +12,47 @@
 //  作者網站： http://www.kaiching.org
 //  電子郵件： kaichingc@gmail.com
 //
-//  此專案中所有圖片均取自 openclipart https://openclipart.org/
-//
 //  作者： 張凱慶
 //  時間： 2017/08/03
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class ResultController: UIViewController {
     //MARK: 屬性
     
     //Core data
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     var taskScore: [Score] = []
-
+    
+    //MARK: 視窗屬性
+    @IBOutlet weak var reault: UITextView!
+    
     //MARK: 預設方法
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //清除 Core Data 中的所有資料
+        //載入成績
         do {
             taskScore = try context.fetch(Score.fetchRequest())
+            
+            //顯示成績
+            reault.text? += "\n"
             for item in taskScore {
-                context.delete(item)
+                let a = item.times
+                let b = item.correct
+                reault.text? +=  String(a) + " - " + String(b) + "\n"
             }
         }
         catch {
             print("Fetching Failed")
         }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
-
+    
+    
 }
 

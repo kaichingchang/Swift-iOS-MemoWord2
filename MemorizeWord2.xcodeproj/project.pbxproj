@@ -13,6 +13,8 @@
 		384571C11F32F5BA00216EE7 /* MemorizeWord2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 384571BF1F32F5BA00216EE7 /* MemorizeWord2.xcdatamodeld */; };
 		384571C31F32F5BA00216EE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 384571C21F32F5BA00216EE7 /* Assets.xcassets */; };
 		384571C61F32F5BA00216EE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384571C41F32F5BA00216EE7 /* LaunchScreen.storyboard */; };
+		384571D01F33458600216EE7 /* TestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384571CF1F33458600216EE7 /* TestController.swift */; };
+		384571D41F3345D700216EE7 /* ReultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384571D31F3345D700216EE7 /* ReultController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		384571C21F32F5BA00216EE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		384571C51F32F5BA00216EE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		384571C71F32F5BA00216EE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		384571CF1F33458600216EE7 /* TestController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestController.swift; sourceTree = "<group>"; };
+		384571D31F3345D700216EE7 /* ReultController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReultController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				384571C41F32F5BA00216EE7 /* LaunchScreen.storyboard */,
 				384571C71F32F5BA00216EE7 /* Info.plist */,
 				384571BF1F32F5BA00216EE7 /* MemorizeWord2.xcdatamodeld */,
+				384571CF1F33458600216EE7 /* TestController.swift */,
+				384571D31F3345D700216EE7 /* ReultController.swift */,
 			);
 			path = MemorizeWord2;
 			sourceTree = "<group>";
@@ -143,6 +149,8 @@
 				384571BB1F32F5BA00216EE7 /* ViewController.swift in Sources */,
 				384571B91F32F5BA00216EE7 /* AppDelegate.swift in Sources */,
 				384571C11F32F5BA00216EE7 /* MemorizeWord2.xcdatamodeld in Sources */,
+				384571D41F3345D700216EE7 /* ReultController.swift in Sources */,
+				384571D01F33458600216EE7 /* TestController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +316,7 @@
 				384571CC1F32F5BA00216EE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
